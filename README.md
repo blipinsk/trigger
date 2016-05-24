@@ -19,7 +19,11 @@ Usage
           });
   ```
   
-  2. Pull the `trigger` (with the `pull(...)`) method to execute the `onTriggered` block.
+  2. Pull the `trigger` method to execute the `onTriggered` block.
+  
+  ```java
+  String result = trigger.pull(true);
+  ```
   
 Depending on which version of `Trigger` you've chosen, `pull(...)` will behave differently. 
 It:
