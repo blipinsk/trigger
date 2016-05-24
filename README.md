@@ -21,7 +21,7 @@ Usage
           });
   ```
   
-  2. Pull the `trigger` method to execute the `onTriggered` block.
+  2. Pull the `trigger` to execute the `onTriggered` block.
   
   ```java
   String result = trigger.pull(true);
