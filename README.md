@@ -3,6 +3,8 @@ Trigger
 
 Simple command pattern implementation.
 
+Let's be honest... that's just a simple class, but it can sometimes tidy up your code quite a bit. It uses java generics and intuitive class naming, so you can easily create a method reference or just a callback, just like you wanted.
+
 Usage
 =====
 *For a working implementation of this library see the `sample/` folder.*
