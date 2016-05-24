@@ -1,7 +1,7 @@
 Trigger
 =======
 
-Simple command pattern implementation.
+Simple command pattern helper class.
 
 Let's be honest... that's just a simple class, but it can sometimes tidy up your code quite a bit. It uses java generics and intuitive class naming, so you can easily create a method reference or just a callback, just like you wanted.
 
@@ -12,7 +12,7 @@ Usage
   1. Create a `Trigger` object (one of 4 types: `Trigger.NoParam.NoResult`, `Trigger.NoParam.WithResult`, `Trigger.WithParam.NoResult`or `Trigger.WithParam.WithResult`)
   
   ```java
-  final Trigger.WithParam.WithResult<Boolean, String> trigger =
+  Trigger.WithParam.WithResult<Boolean, String> withParamWithResult =
           Trigger.WithParam.WithResult.create(new Trigger.WithParam.WithResult.OnTriggered<Boolean, String>() {
               @Override
               public String onTriggered(Boolean param) {
