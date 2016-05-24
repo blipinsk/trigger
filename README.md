@@ -12,7 +12,7 @@ Usage
   1. Create a `Trigger` object (one of 4 types: `Trigger.NoParam.NoResult`, `Trigger.NoParam.WithResult`, `Trigger.WithParam.NoResult`or `Trigger.WithParam.WithResult`)
   
   ```java
-  Trigger.WithParam.WithResult<Boolean, String> withParamWithResult =
+  Trigger.WithParam.WithResult<Boolean, String> trigger =
           Trigger.WithParam.WithResult.create(new Trigger.WithParam.WithResult.OnTriggered<Boolean, String>() {
               @Override
               public String onTriggered(Boolean param) {
